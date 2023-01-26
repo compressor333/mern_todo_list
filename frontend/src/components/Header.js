@@ -3,12 +3,12 @@ import Button from "./Button"
 
 
 
-const Header = ({text, onClick}) => {
+const Header = ({text, onClick, scale}) => {
 
   return (
     <header className="header">
       <h1>{text}</h1>
-      <Button text='Add' onClick={onClick} color='Red'/>
+      <Button scale={scale} text='Close' onClick={onClick} color='Red'/>
     </header>
   )
 }

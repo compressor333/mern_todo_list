@@ -1,12 +1,12 @@
 
 
-const Button = ({text, onClick}) => {
+const Button = ({text, onClick, scale}) => {
 
 
 
 return (
     <>
-    <button onClick={onClick} className="btn">{text}</button>
+    <button onMouseEnter={scale("enter")} onMouseLeave={scale("leave")} onClick={onClick} className="btn">{text}</button>
     </>
   )
 }
